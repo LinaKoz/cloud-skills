@@ -7,8 +7,7 @@ Lina's custom skills for Claude. Each folder under `skills/` is a self-contained
 | [ai-coding-interview](skills/ai-coding-interview/SKILL.md) | Pair-programming copilot for live AI-allowed coding interviews: clarify → read context → plan & design review → requirements-based tests → test review → staged implementation → final verification. |
 | [system-design-interview](skills/system-design-interview/SKILL.md) | Copilot for live system design interviews: requirements, structure, trade-offs, failure modes — supports your reasoning rather than replacing it. |
 | [council](skills/council/SKILL.md) | Adversarial "Council of 5 Experts" red-team review of architectures, docs, decisions. References: `architecture.md`, `general.md`. |
-| [harsh-review](skills/harsh-review/SKILL.md) | Claude Code skill: adversarial review of uncommitted changes / a commit / a diff across correctness & concurrency, security, reliability & cost, API contract & test coverage. Every finding is verified empirically (CONFIRMED / PLAUSIBLE) and reported via ReportFindings; review-only unless fixes are requested. Local copy of `~/.claude/skills/harsh-review`. |
-| [pr-review-council](skills/pr-review-council/SKILL.md) | Multi-angle PR/diff review with 3 parallel subagents (concurrency & shutdown, auth & secrets, cost & reliability), file:line findings ranked by severity. |
+| [harsh-review](skills/harsh-review/SKILL.md) | Adversarial, verified code review of local changes, commits, branches or PRs across 4 angles (correctness & concurrency, security, reliability & cost, API contract & tests). Three levels: quick / standard (adaptive parallel agents) / deep (always parallel). Every finding is verified (CONFIRMED / PLAUSIBLE) and cites file:line. Replaces the former `pr-review-council`. Works in Claude Code and the Claude app. |
 
 ## Using a skill
 
